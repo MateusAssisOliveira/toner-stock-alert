@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <td align="center">
+
+      <!-- CONTAINER PRINCIPAL -->
+      <table class="container" width="680" cellpadding="0" cellspacing="0" border="0" style="width:680px;max-width:680px;background-color:#ffffff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.10);overflow:hidden;">
+
+        <!-- CABEÇALHO -->
+        <tbody><tr>
+          <td class="header" style="background-color:#1a2e4a;padding:36px 40px;text-align:center;">
+            <p style="font-size:28px;font-weight:700;color:#ffffff;margin:0 0 6px 0;letter-spacing:-0.3px;">
+              📦 Relatório de Estoque Crítico
+            </p>
+            <p style="font-size:14px;color:#8faecf;margin:0;letter-spacing:0.2px;">
+              Itens que necessitam reposição imediata
+            </p>
+            <!-- Data/Hora -->
+            <p style="font-size:12px;color:#5c7fa8;margin:14px 0 0 0;letter-spacing:0.3px;text-transform:uppercase;">
+              Gerado em: <span style="color:#8faecf;">{{DATA_GERACAO}}</span>
+            </p>
+          </td>
+        </tr>
+
+        <!-- CARD DE RESUMO -->
+        <tr>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tbody><tr>
+                <td style="padding:28px 40px 0;">
+                  <!-- Card alerta -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff5f5;border:2px solid #fecaca;border-radius:10px;">
+                    <tbody><tr>
+                      <td style="padding:22px 28px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tbody><tr>
+                            <td style="text-align:center;">
+                              <p style="font-size:11px;font-weight:700;color:#b91c1c;letter-spacing:1.2px;text-transform:uppercase;margin:0 0 4px 0;">
+                                ⚠️ &nbsp;Situação de Alerta
+                              </p>
+                              <p style="font-size:52px;font-weight:700;color:#dc2626;margin:2px 0;line-height:1;">
+                                7
+                              </p>
+                              <p style="font-size:13px;color:#7f1d1d;font-weight:600;margin:2px 0 0 0;">
+                                Itens Críticos Identificados
+                              </p>
+                              <p style="font-size:12px;color:#b91c1c;margin:6px 0 0 0;">
+                                Estoque zerado — reposição imediata necessária
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+
+        <!-- TÍTULO DA TABELA -->
+        <tr>
+          <td style="padding:28px 40px 12px;">
+            <p style="font-size:13px;font-weight:700;color:#1a2e4a;letter-spacing:0.8px;text-transform:uppercase;border-left:3px solid #2563eb;padding-left:10px;margin:0;">
+              Detalhamento dos Itens Críticos
+            </p>
+          </td>
+        </tr>
+
+        <!-- TABELA PRINCIPAL -->
+        <tr>
+          <td class="table-wrap" style="padding:0 24px 32px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;border-radius:8px;overflow:hidden;border:1px solid #e2e8f0;">
+
+              <!-- CABEÇALHO DA TABELA -->
+              <thead>
+                <tr style="background-color:#1a2e4a;">
+                  <th style="padding:12px 14px;text-align:left;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;border-right:1px solid #2d4a6b;">Equipamento</th>
+                  <th style="padding:12px 14px;text-align:left;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;border-right:1px solid #2d4a6b;">Local</th>
+                  <th style="padding:12px 10px;text-align:center;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;border-right:1px solid #2d4a6b;">Item</th>
+                  <th style="padding:12px 10px;text-align:center;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;border-right:1px solid #2d4a6b;">Qtd.</th>
+                  <th style="padding:12px 10px;text-align:center;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;border-right:1px solid #2d4a6b;">Status</th>
+                  <th class="col-obs" style="padding:12px 14px;text-align:left;font-size:11px;font-weight:700;color:#ffffff;letter-spacing:0.8px;text-transform:uppercase;">Obs.</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <!-- LINHA 1 — ímpar -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Pantum</span><br>
+                    <span style="font-size:12px;color:#1e293b;">M6700DW</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;">Periódico UBAMETRA UBÁ</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;">Toner</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;">—</td>
+                </tr>
+
+                <!-- LINHA 2 — par -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Pantum</span><br>
+                    <span style="font-size:12px;color:#1e293b;">M6700DW</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;background-color:#fff7f7;">Periódico UBAMETRA UBÁ</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">Drum</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;background-color:#fff7f7;">—</td>
+                </tr>
+
+                <!-- LINHA 3 — ímpar -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#f0fdf4;color:#15803d;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">HP</span><br>
+                    <span style="font-size:12px;color:#1e293b;">LaserJet M1132 MFP</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;">Sala de Exames</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;">Toner</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;">—</td>
+                </tr>
+
+                <!-- LINHA 4 — par -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#fefce8;color:#a16207;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Samsung</span><br>
+                    <span style="font-size:12px;color:#1e293b;">ProXpress M4070FR</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;background-color:#fff7f7;">Terceirizados</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">Toner</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;background-color:#fff7f7;">—</td>
+                </tr>
+
+                <!-- LINHA 5 — ímpar -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#fefce8;color:#a16207;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Samsung</span><br>
+                    <span style="font-size:12px;color:#1e293b;">ProXpress M4070FR</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;">Recepção</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;">Toner</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;">—</td>
+                </tr>
+
+                <!-- LINHA 6 — par -->
+                <tr style="background-color:#fef2f2;border-bottom:1px solid #fecaca;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Pantum</span><br>
+                    <span style="font-size:12px;color:#1e293b;">M6700DW</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;background-color:#fff7f7;">UBAMETRA VRB</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">Toner</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;background-color:#fff7f7;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;background-color:#fff7f7;">—</td>
+                </tr>
+
+                <!-- LINHA 7 — ímpar -->
+                <tr style="background-color:#fef2f2;">
+                  <td style="padding:11px 14px;font-size:12px;color:#1e293b;font-weight:600;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:0.3px;">Pantum</span><br>
+                    <span style="font-size:12px;color:#1e293b;">M6700DW</span>
+                  </td>
+                  <td style="padding:11px 14px;font-size:12px;color:#374151;border-right:1px solid #e2e8f0;">UBAMETRA VRB</td>
+                  <td style="padding:11px 10px;font-size:12px;color:#374151;text-align:center;border-right:1px solid #e2e8f0;">Drum</td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="font-size:16px;font-weight:700;color:#dc2626;">0</span>
+                  </td>
+                  <td style="padding:11px 10px;text-align:center;border-right:1px solid #e2e8f0;">
+                    <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                  </td>
+                  <td class="col-obs" style="padding:11px 14px;font-size:11px;color:#6b7280;">—</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+
+        <!-- LEGENDA -->
+        <tr>
+          <td style="padding:0 40px 28px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">
+              <tbody><tr>
+                <td style="padding:14px 18px;">
+                  <p style="font-size:11px;font-weight:700;color:#64748b;letter-spacing:0.8px;text-transform:uppercase;margin:0 0 8px 0;">Legenda de Status</p>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody><tr>
+                      <td style="padding-right:20px;">
+                        <span style="display:inline-block;background-color:#dc2626;color:#ffffff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Crítico</span>
+                        <span style="font-size:11px;color:#64748b;margin-left:6px;">Estoque zerado — ação imediata</span>
+                      </td>
+                      <td style="padding-right:20px;">
+                        <span style="display:inline-block;background-color:#d97706;color:#ffffff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Atenção</span>
+                        <span style="font-size:11px;color:#64748b;margin-left:6px;">Estoque baixo — monitorar</span>
+                      </td>
+                      <td>
+                        <span style="display:inline-block;background-color:#16a34a;color:#ffffff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;">Normal</span>
+                        <span style="font-size:11px;color:#64748b;margin-left:6px;">Estoque adequado</span>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+
+        <!-- DIVIDER -->
+        <tr>
+          <td style="padding:0 40px;">
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:0;">
+          </td>
+        </tr>
+
+        <!-- RODAPÉ -->
+        <tr>
+          <td class="footer" style="padding:24px 40px;text-align:center;">
+            <p style="font-size:11px;color:#94a3b8;margin:0 0 4px 0;">
+              Este e-mail foi enviado automaticamente pelo sistema de controle de estoque.
+            </p>
+            <p style="font-size:10px;color:#cbd5e1;margin:0;">
+              Por favor, não responda a esta mensagem. &nbsp;|&nbsp; Sistema ERP Interno &nbsp;|&nbsp; {{ANO}}
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+      <!-- FIM CONTAINER PRINCIPAL -->
+
+    </td>
+  </body>
+</html>
